@@ -25,11 +25,6 @@ namespace Week4_Tema2
             {
                 MyStack.RemoveFirst();
             }
-            else
-            {
-                Console.WriteLine("Your stack is empty already");
-            }
-            
         }
 
         internal void Print()
@@ -44,7 +39,7 @@ namespace Week4_Tema2
             }
             else
             {
-                Console.WriteLine("No elements available");
+                Console.WriteLine("\nNo elements available in stack.");
             }
            
         }

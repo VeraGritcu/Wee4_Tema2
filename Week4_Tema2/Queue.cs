@@ -26,10 +26,6 @@ namespace Week4_Tema2
             {
                 QueueSequence.RemoveLast();
             }
-            else
-            {
-                Console.WriteLine("\nYour queue is empty already");
-            }
 
         }
 
@@ -45,7 +41,7 @@ namespace Week4_Tema2
             }
             else
             {
-                Console.WriteLine("No elements available");
+                Console.WriteLine("\nNo elements available in queue.");
             }
            
         }

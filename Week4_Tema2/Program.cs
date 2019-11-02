@@ -22,6 +22,11 @@ namespace Week4_Tema2
             myStack.Push(15);
             myStack.Push(20);
             myStack.Pop();
+            myStack.Pop();
+            myStack.Pop();
+            myStack.Pop();
+            myStack.Pop();
+            myStack.Pop();
             myStack.Print();
             Console.ReadKey();
 
