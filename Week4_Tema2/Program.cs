@@ -16,6 +16,13 @@ namespace Week4_Tema2
             myQueue.Enqueue(4);
             myQueue.Dequeue();
             myQueue.Print();
+
+            Stack myStack = new Stack(5);
+            myStack.Push(10);
+            myStack.Push(15);
+            myStack.Push(20);
+            myStack.Pop();
+            myStack.Print();
             Console.ReadKey();
 
             

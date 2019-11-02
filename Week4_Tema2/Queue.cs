@@ -8,29 +8,46 @@ namespace Week4_Tema2
 {
     internal class Queue
     {
-        public Queue(object x)
+        public Queue(int x)
         {
-            QueueSequence = new LinkedList<object>();
+            QueueSequence = new LinkedList<int>();
             QueueSequence.AddFirst(x);
         }
-        private LinkedList<object> QueueSequence { get; set; }
+        private LinkedList<int> QueueSequence { get; set; }
 
-        internal void Enqueue(object x)
+        internal void Enqueue(int x)
         {
             QueueSequence.AddFirst(x);
         }
 
         internal void Dequeue()
         {
-            QueueSequence.RemoveLast();
+            if (QueueSequence.Count > 0)
+            {
+                QueueSequence.RemoveLast();
+            }
+            else
+            {
+                Console.WriteLine("\nYour queue is empty already");
+            }
+
         }
 
         internal void Print()
         {
-            foreach (object item in QueueSequence)
+            if (QueueSequence.Count>0)
             {
-                Console.WriteLine(item);
+                Console.Write($"Your current elements in queue are: ");
+                foreach (object item in QueueSequence)
+                {
+                    Console.Write($"[{item}] ");
+                }
             }
+            else
+            {
+                Console.WriteLine("No elements available");
+            }
+           
         }
     }
 }
